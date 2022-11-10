@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <title>Week 8 lab</title>
+	  <!-- add the link tag to the style.css which will be in a folder -->
+
+	</head>
+	<body>
+		<h1>Graded lab exercise - week 8</h1>
+		<ol>
+			<li>Add 3 examples of JavaScript code</li>
+			<li>Create a repo in GitHub and add your project when finished</li>
+			<li>Save the link to the GitHub repo in a text document and upload it to Moodle</li>
+			<ul>
+				<li>Your link should look like this https://github/username/repoName.git</li>
+			</ul>
+		</ol>
+		<button onclick="btnFunction()">Don't click</button>
+
+		<p id="demo" onclick="pFunction()"></p>
+
+		<p>Type something inside here if you dare</p>
+
+		<input type="text" onkeypress="inputFunction()">
+
+		<br>
+
+		<button id="rate" onclick="rateFunction()">Click me random number from 0 - 10</button>
+
+
+		
+		<script type ="text/JavaScript">
+		function btnFunction() {
+		  document.getElementById("demo").innerHTML = "I told you not to click";
+		}
+
+
+
+		function inputFunction() {
+			alert("You cannot type here!")
+		}
+
+		function rateFunction() {
+			let x = Math.random() * 10;
+			document.getElementById("rate").innerHTML = x;
+		}
+		</script>
+		
+	</body>
+</html>
